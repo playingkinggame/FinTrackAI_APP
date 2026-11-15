@@ -1,0 +1,2 @@
+[functions.financial-assistant]
+verify_jwt = true
