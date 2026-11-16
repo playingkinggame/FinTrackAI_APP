@@ -29,7 +29,7 @@ export default function Assistant() {
     },
   ]);
   const [busy, setBusy] = useState(false);
-  const scrollRef = useRef<ScrollView>(null);
+  const scrollRef = useRef<React.ComponentRef<typeof ScrollView>>(null);
 
   // Keep the newest message visible when messages change or the keyboard opens.
   const scrollToEnd = () => scrollRef.current?.scrollToEnd({ animated: true });

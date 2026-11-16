@@ -5,11 +5,40 @@
     "scheme": "fintrackai",
     "version": "1.0.0",
     "orientation": "portrait",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
-    "plugins": ["expo-router", "expo-secure-store"],
-    "experiments": { "typedRoutes": true },
-    "android": { "package": "com.yourname.fintrackai" },
-    "ios": { "bundleIdentifier": "com.yourname.fintrackai" }
+    "plugins": [
+      "expo-router",
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "android": {
+      "package": "com.yathin.fintrackai",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#080D18"
+      },
+      "blockedPermissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.yathin.fintrackai"
+    },
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "abb0cbd6-52c9-4237-8c84-9aa51b4c65e1"
+      }
+    }
   }
 }
